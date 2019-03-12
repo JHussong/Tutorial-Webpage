@@ -9,26 +9,225 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Permanent+Marker" rel="stylesheet">
 </head>
 <body>
-<header></header>
-<h1 id="header-text">JavaScript</h1>
-<section>
- 
-</section>
+<!--Sidebar-->
+    <div class="sidebar">
+        <ul>
+            <li class="side-nav"><span class="heading">Site Navigation</span></li>
+            <li class="side-nav"><a class="side-link" href="#datatypes">Data Types</a></li>
+            <li class="side-nav"><a class="side-link" href="#variables">Variables</a></li>
+            <li class="side-nav"><a class="side-link" href="#loops">Loops</a></li>
+            <li class="side-nav"><a class="side-link" href="#funcs">Functions</a></li>
+            <li class="side-nav"><a class="side-link" href="#arrays">Arrays</a></li>
+        </ul>
+            <hr/>
+        <ul>
+            <li class="side-nav"><span class="heading">Resources</span></li>
+            <li class="side-nav"><a class="side-link" href="https://stackoverflow.com/" target="blank">StackOverflow</a></li>
+            <li class="side-nav"><a class="side-link" href="https://developer.mozilla.org/en-US/" target="blank">MDN</a></li>
+            <li class="side-nav"><a class="side-link" href="https://www.codementor.io/" target="blank">Code Mentor</a></li>
+            <li class="side-nav"><a class="side-link" href="https://javascript.info/" target="blank">JS.info</a></li>
+            <li class="side-nav"><a class="side-link" href="https://blog.codeanalogies.com/category/javascript/" target="blank">CodeAnalogies</a></li>
+            <li class="side-nav"><a class="side-link" href="https://eloquentjavascript.net/" target="blank">Eloquent JavaScript</a></li>
+        </ul>
+    </div>
 
-<section id="body">
+<!--Main Content-->
+    <div class="mainpage">
+        <div id="header">
+            <header>
+                <h1 id="head-text">JavaScript</h1>
+            </header>
+        </div>
+        
+<!--Top Nav Bar-->
+        <span id="nav-bar">
+            <nav>
+                <ul>
+                    <li class="top-nav"><a class="nav-link" href="#datatypes">DataTypes</a></li>
+                    <li class="top-nav"><a class="nav-link" href="#variables">Variables</a></li>
+                    <li class="top-nav"><a class="nav-link" href="#loops">Loops</a></li>
+                    <li class="top-nav"><a class="nav-link" href="#funcs">Functions</a></li>
+                    <li class="top-nav"><a class="nav-link" href="#arrays">Arrays</a></li>
+                </ul>
+            </nav>
+        </span>
 
-</section>
+<!--Articles-->
+        <section id="body">
+            <article>
+                <h2 id="datatypes">Data Types</h2>
+                <img src="datatypes.png" alt="Data Types">
+                    <p>
+                        A data type is a classification of data. Programming languages need to have different datatypes to
+                        interact properly with values. You can do math with a number, but not with a sentence, so the computer classifies
+                        them differently. JavaScript is a loosely typed or a dynamic language. Variables in JavaScript are not directly
+                        associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types. 
+                        All types except objects define immutable values (values, which are incapable of being changed).
+                    </p>
+                    <ul>
+                        <li>
+                            Strings:<br>
+                            A string is a series of characters wrapped in quotes. Any data that contains text will be represented by a string.
+                        </li>
+                        <br>
+                        <li>
+                            Numbers:<br>
+                            A number is a numerical value up to 15 digits. Numbers do not have any special syntax associated with them like strings do.
+                            If you were to place a number in quotes ("13"), it wouldn’t be considered a number, but a character in a string.
+                            A number can be whole or a decimal and can have a positive or negative value.
+                        </li>
+                        <br>
+                        <li>
+                            Boolean:<br>
+                            A boolean is a value that is either true or false. Boolean values are very commonly used in programming for when a
+                            value might switch between yes and no, on and off, or true and false. Booleans can represent the current state of
+                            something that is likely to change.
+                        </li>
+                        <br>
+                        <li>
+                            Undefined:<br>
+                            An undefined variable has no value. With the lt or var keyword, we’re declaring a variable, but until a value is
+                            assigned to it, it is still undefined.
+                        </li>
+                        <br>
+                        <li>
+                            Null:<br>
+                            Null is a value that represents nothing. Null is the intentional absence of any value. It represents something that
+                            doesn’t exist and is not any of the other datatypes. The difference between null and undefined is rather subtle, but
+                            the main distinction is that null is an intentionally empty value.
+                        </li>
+                        <br>
+                        <li>
+                            Objects:<br>
+                            An object is a collection of key/value pairs. Any value that isn’t simply a string, number, Boolean, null, undefined,
+                            or Symbol is an object. Objects consist of properties and methods. Properties are what the object is, and methods are
+                            what the object does. 
+                        </li>
+                    </ul>
+            </article>
+            <br>
+            <br>
+            <article>
+                <h2 id="variables">Variables</h2>
+                <img id="Var-pic" src="variables.png" alt="Variables">
+                    <p>
+                        Like many other programming languages, JavaScript has variables. Variables can be thought of as named containers.
+                        You can place data into these containers and then refer to the data simply by naming the container. Before you use a
+                        variable in a JavaScript program, you must declare it. Variables are declared with the let, var, and const keywords.
+                        A JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript
+                        during variable declaration what type of value the variable will hold. The value type of a variable can change during
+                        the execution of a program and JavaScript takes care of it automatically.
+                    </p>
+            </article>
+            <br>
+            <br>
+            <article>
+                    <h2 id="loops">Loops</h2>
+                    <img id="loop-pic" src="loop.jpg" alt="Loop logic">
+                    <br>
+                    <p>
+                        Imagine you have to write a program which performs a repetitive task such as counting from 1 to 100.
+                        Coding 100 lines to do this task would be mundane. There has to be an easier way, right? This is where loops come into the picture.
+                        Loops are specifically designed to perform repetitive tasks with one set of code. Loops save alot of time. 
+                    </p>
+                    <br>
+                    <ul>
+                        <li>
+                            For Loops:<br>
+                            There are three parts to a for loop. The variable declaration is the first part of the loop which initializes the variable at the
+                            beginning of the loop to some value. This value is the starting point of the loop. The condition is the second part of the for loop
+                            and it is the part that decides whether the loop will continue running or not. While the condition in the loop is true, it will
+                            continue running. Once the condition becomes false, the loop will stop. The increment statementis the third part of the for loop.
+                            It is the part of the loop that changes the value of the variable created in the variable declaration part of the loop. The increment
+                            statement is the part of the for loop which will eventually stop the loop from running.
+                        </li>
+                        <br>
+                        <li>
+                            While Loops:<br>
+                            The while loop works differently than the for loop. The for loop repeats a segment of code a specific number of times, while the
+                            while loop repeats a segment of code an unknown number of times. The code within a while loop will execute while the specified condition is true.
+                        </li>
+                        <br>
+                        <li>
+                            Do-while Loops:<br>
+                            The do-while loop is very similar to the while loop, but it does things in reverse order. The mechanism of the while loop is - while a condition
+                            is true, perform a certain action. The mechanism of the do-while loop is - perform a certain action while a condition is true. Furthermore, the code
+                            within a do-while loop will always execute at least once, even if the specified condition is false. This is because the code is executed
+                            before the condition is tested.
+                        </li>
+                    </ul>
+                </article>
+                <br>
+                <br>
+                <article>
+                    <h2 id="funcs">Functions</h2>
+                    <img id="func-pic" src="functionexample.jpg" alt="Function Example">
+                    <br>
+                    <p>
+                            A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of
+                        writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer
+                        to divide a big program into a number of small and manageable functions.
+                        There are a few different ways to define a function in JavaScript:
+                    </p>
+                        <br>
+                        <ul>
+                            <li>
+                                A Function Declaration defines a named function. To create a function declaration you use the function keyword followed
+                                by the name of the function. When using function declarations, the function definition is hoisted, thus allowing the
+                                function to be used before it is defined.
+                            </li>
+                            <br>
+                            <li>
+                                A Function Expression defines a named or anonymous function. An anonymous function is a function that has no name.
+                                Function Expressions are not hoisted, and therefore cannot be used before they are defined.
+                            </li>
+                        </ul>
+                        <br>
+                    <p>    
+                        You may have heard the terms parameters and arguments used interchangeably. While very similar, there is an important
+                        distinction to make between these two keywords. Parameters are used when defining a function, they are the names created in
+                        the function definition. Arguments, on the other hand, are the values the function receives from each parameter when the
+                        function is executed. Functions execute when the function is called. This process is known as invocation. You can invoke
+                        a function by referencing the function name, followed by an open and closed parenthesis: ().Every function in JavaScript returns
+                        undefined unless otherwise specified. We can customize what is returned in our function by using the return keyword
+                        followed by our return value. The return statement not only returns values from a function, but it
+                        assigns them to whatever called the function. Functions are function objects. In JavaScript, anything that is not a primitive
+                        type ( undefined, null,boolean, number, or string) is an object. Objects in JavaScript are extremely versatile.
+                        Because of this, we can even pass a function as a parameter into another function. When a function accepts another function as
+                        a parameter, or returns a function, it is called a higher-order function.
+                    </p>
+                </article>
+                <br>
+                <br>
+                <article>
+                    <h2 id="arrays">Arrays</h2>
+                    <img id="arr-pic" src="arrays.png" alt="Array Example">
+                    <br>
+                    <p>
+                        To work with a chunk of digital data, we’ll first have to find a way to represent it in our machine’s memory. Say, for example,
+                        that we want to represent a collection of the numbers 2, 3, 5, 7, and 11. We could get creative with strings—after all, strings can have
+                        any length, so we can put a lot of data into them—and use "2 3 5 7 11" as our representation. But this is awkward. You’d have to somehow
+                        extract the digits and convert them back to numbers to access them. Fortunately, JavaScript provides a data type specifically for storing
+                        sequences of values. It is called an array and is written as a list of values between square brackets, separated by commas.
+                    </p>
+                </article>
+            </section>
+                    <br>
+                    <br>
+                    <hr>
+            <!--Footer-->
+            <section id="footer">
+                <div>
+                    <footer>
+                        <ul>
+                            <li class="foot-list">Created by Joe</li>
+                            <li class="foot-list">JavaScript Tutorial Webpage</li>
+                            <li class="foot-list"><a href="https://www.elevenfifty.org/" target="blank">ElevenFifty</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </section>
 
-<section id="sidebar">
-
-</section>
-
-<section id="footer">
-
-</section>
-
-
-
-
+    </div>
 </body>
 </html>
